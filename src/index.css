@@ -1,0 +1,417 @@
+@import url(./assets/fonts/Jost/stylesheet.css);
+
+@font-face {
+  font-family: NeueMachinaRegular;
+  src: url("./assets/fonts/NeueMachinaRegular.woff");
+}
+@font-face {
+  font-family: NeueMachinaUltrabold;
+  src: url("./assets/fonts/NeueMachinaUltrabold.woff");
+}
+body {
+  margin: 0;
+  font-family: "Jost";
+  font-weight: 400;
+  background-color: #ebe3e6;
+}
+*,
+:after,
+:before {
+  box-sizing: border-box;
+}
+a {
+  color: #ffffff;
+  text-decoration: none;
+}
+p {
+  font-family: "Jost";
+  font-weight: 400;
+}
+
+html,
+body,
+#root,
+.mainContainer {
+  height: 100%;
+}
+
+.dark-theme-color {
+  background-color: #000000;
+}
+.secondary-color {
+  background-color: #3835c2;
+}
+.darkThemeModer > .headerEleSection > div,
+.secondaryThemeMode > .headerEleSection > div {
+  border-bottom: 1px solid #e8e8e8 !important;
+}
+
+.secondaryThemeMode > .sc-gKclnd.kinqav.headerEleSection {
+  background-color: #3835c2 !important;
+}
+
+header.MuiAppBar-colorPrimary {
+  background-color: transparent;
+  right: auto;
+  box-shadow: none;
+  max-width: 1232px;
+}
+ul {
+  margin: 0;
+  padding: 0;
+  list-style: none;
+}
+/* FAQ style for tab menu */
+.MuiContainer-root .MuiBox-root img {
+  margin: 20px 0px 20px;
+  max-width: 100%;
+}
+.MuiContainer-root .MuiBox-root {
+  margin-left: 120px;
+}
+.MuiTabs-vertical .MuiTab-root {
+  font-family: "Jost";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 21px;
+  line-height: 27px;
+  color: #9e9e9e;
+  text-align: left;
+  border-bottom: 0.5px solid rgba(0, 0, 0, 0.12);
+  padding: 30px 0px;
+  text-transform: initial;
+}
+.MuiTabs-vertical .MuiTab-root.Mui-selected {
+  color: #000000;
+}
+.MuiTabs-vertical .MuiTab-root .MuiTab-wrapper {
+  align-items: flex-start;
+}
+.PrivateTabIndicator-colorSecondary-7 {
+  display: none;
+}
+/* home Page Modal stle */
+.homePageModal .MuiIconButton-label:hover {
+  color: #ffffff;
+}
+.homePageModal .MuiPaper-root {
+  background-color: #0c0c0c;
+  border-radius: 10px;
+  padding: 40px;
+}
+.homePageModal .MuiTypography-root span {
+  margin-right: 20px;
+}
+.homePageModal .MuiTypography-root {
+  display: flex;
+  margin-bottom: 20px;
+}
+
+.journeyPageModal .MuiPaper-root {
+  min-height: 50vh;
+  margin-top: 10%;
+}
+
+.journeyPageModal .MuiDialogContent-root {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  flex-wrap: wrap;
+}
+.journeyPageModal .MuiDialogTitle-root button span {
+  margin-right: 13px;
+  color: #fff;
+  font-weight: normal;
+  font-size: 16px;
+}
+
+.journeyPageModal .MuiDialogTitle-root button {
+  top: 40px;
+}
+.journeyPageModal .MuiDialogTitle-root {
+  border-bottom: 0.5px solid #777777;
+  padding: 0px 0px 10px;
+  margin-bottom: 20px;
+}
+.journeyPageModal .MuiTypography-h5 {
+  font-size: 19px;
+}
+
+.pathwayPageModal.journeyPageModal .MuiDialogTitle-root button {
+  top: 8px;
+  right: 0px !important;
+}
+
+.pathwayPageModal.homePageModal .MuiBackdrop-root {
+  /* background-color: #ffffff50 !important; */
+  background-color: transparent !important;
+}
+.pathwayPageModal.homePageModal .MuiPaper-root {
+  background-color: #3835c2 !important;
+  border-radius: 0 !important;
+  margin-top: 14%;
+  max-height: 640px;
+  height: 100%;
+}
+
+@media (max-width: 960px) {
+  .pathwayPageModal.homePageModal .MuiDialog-scrollPaper {
+    align-items: flex-end;
+  }
+  .pathwayPageModal.homePageModal .MuiPaper-root {
+    max-height: 72vh;
+    width: calc(100%);
+    margin: 0px;
+  }
+}
+
+.pathwayPageModal.journeyPageModal .MuiDialogTitle-root {
+  border-bottom: none !important;
+}
+
+/* Common Modal Style */
+
+.geneModal .MuiBackdrop-root {
+  background: rgba(55, 55, 55, 0.63) !important;
+  backdrop-filter: blur(12px) !important;
+}
+.geneModal .MuiPaper-root {
+  width: 100%;
+  max-width: 574px;
+  height: auto;
+  padding: 30px;
+  margin: auto;
+  background-color: #ffffff;
+  border-radius: 0px !important;
+  align-items: center;
+}
+.geneModal .MuiDialogTitle-root,
+.geneModal .MuiDialogContent-root {
+  max-width: 325px;
+  width: 100%;
+}
+.geneModal .MuiDialogTitle-root {
+  padding: 30px 0px 20px;
+}
+.geneModal .MuiDialogContent-root {
+  padding: 20px 0px 0;
+}
+
+.geneModal .MuiDialogTitle-root h6 {
+  margin-bottom: 0;
+}
+.geneModal .MuiDialogTitle-root h2 {
+  font-family: "Jost";
+  font-style: normal;
+  font-weight: 700;
+  font-size: 26px;
+  line-height: 164.5%;
+  color: #000000;
+}
+
+.geneModal .button-group .MuiButtonBase-root {
+  width: 100%;
+  font-family: "Jost";
+  font-style: normal;
+  font-weight: 400;
+  font-size: 21px;
+  line-height: 164.5%;
+  text-transform: capitalize;
+  color: #000000;
+  justify-content: flex-start;
+  align-items: center;
+  padding: 10px 0 !important;
+}
+
+.geneModal .button-group .MuiButtonBase-root:hover {
+  background-color: #ffffff;
+}
+
+.geneModal .button-group .MuiButtonBase-root:not(:last-child) {
+  margin-bottom: 13px;
+}
+.geneModal .button-group .MuiButtonBase-root:last-child {
+  margin-bottom: 20px;
+}
+
+.geneModal .button-group .MuiButtonBase-root span {
+  display: inline-flex;
+  margin-right: 20px;
+}
+
+.geneModal .MuiDialogContent-root h5.MuiTypography-root:not(:last-child) {
+  margin-bottom: 23px !important;
+}
+.geneModal .MuiDialogContent-root h5.MuiTypography-root:last-child {
+  margin-bottom: 30px !important;
+}
+
+.geneModal .MuiButtonBase-root svg {
+  fill: #000000;
+}
+
+@media (max-width: 959px) {
+  .geneModal .MuiPaper-root {
+    margin: auto 22px;
+  }
+
+  .geneModal .MuiDialogTitle-root h2 {
+    font-weight: 700;
+    font-size: 23px;
+    line-height: 164.5%;
+    text-align: left;
+  }
+
+  .geneModal .MuiDialogTitle-root {
+    margin-top: 0px !important;
+    padding: 25px 25px 15px;
+  }
+  .geneModal .MuiDialogContent-root {
+    padding: 15px 25px 15px;
+  }
+}
+
+/* .geneModal.warningModal {} */
+
+.geneModal.warningModal .MuiDialogTitle-root,
+.geneModal.warningModal .MuiDialogContent-root {
+  max-width: 100%;
+  width: 100%;
+  display: flex;
+  justify-content: center;
+  align-items: center;
+}
+.geneModal.warningModal .MuiDialogContent-root {
+  flex-direction: column;
+}
+
+.geneModal.warningModal .MuiTypography-root {
+  justify-content: center;
+  align-items: center;
+}
+
+.geneModal .Component-closeButton-4 {
+  top: 15px;
+  right: 15px;
+}
+
+/* Accordion panel style */
+.accordionArea .MuiAccordion-root {
+  box-shadow: none;
+  background-color: transparent;
+}
+.accordionArea .MuiSvgIcon-root {
+  color: #ffffff;
+}
+.accordionArea .MuiAccordionSummary-root {
+  border-bottom: 0.5px solid rgba(0, 0, 0, 0.12);
+  padding: 0px;
+}
+.accordionArea .MuiAccordionDetails-root {
+  display: initial;
+  padding: 0;
+}
+.accordionArea .MuiAccordionSummary-content.Mui-expanded {
+  margin: 30px 0;
+}
+.accordionArea h2 {
+  font-family: "Jost";
+  font-style: normal;
+  font-weight: 600;
+  font-size: 21px;
+  line-height: 27px;
+  color: #9e9e9e;
+  padding: 20px 0;
+}
+.accordionArea .MuiAccordionSummary-content {
+  display: initial;
+}
+.accordionArea .MuiAccordionSummary-root.Mui-expanded h2 {
+  color: #000000;
+  padding: 0;
+}
+.accordionArea .MuiAccordion-root.Mui-expanded {
+  margin: 0;
+  border-bottom: 0.5px solid rgba(0, 0, 0, 0.12);
+}
+.accordionArea .PrivateTabIndicator-colorSecondary-10 {
+  background-color: transparent;
+}
+
+@media (max-width: 959px) {
+  .homePageModal .MuiDialogTitle-root {
+    margin-top: 30px;
+  }
+  .homePageModal .MuiPaper-root {
+    padding: 25px;
+  }
+  .homePageModal .MuiTypography-root {
+    display: flex;
+    margin-bottom: 10px;
+    font-size: 18px;
+    text-align: center;
+  }
+  .journeyPageModal .MuiTypography-h5 {
+    font-size: 16px;
+  }
+  .journeyPageModal .MuiTypography-root h2 {
+    font-size: 21px;
+  }
+  .journeyPageModal .MuiTypography-h5 {
+    margin-bottom: 50px;
+  }
+  .journeyPageModal .MuiDialogContent-root {
+    align-items: baseline;
+  }
+  .journeyPageModal .MuiDialogTitle-root {
+    border: 0px;
+    margin-top: 50px;
+  }
+  .journeyPageModal .MuiDialogTitle-root button {
+    top: 17px;
+  }
+
+  .MuiDrawer-root .MuiPaper-root {
+    width: 375px;
+  }
+}
+
+@media (max-width: 375px) {
+  .MuiDrawer-root .MuiPaper-root {
+    width: 320px;
+  }
+}
+
+.MuiDrawer-root {
+  background: rgba(55, 55, 55, 0.63);
+  backdrop-filter: blur(5px);
+}
+
+@-webkit-keyframes fadeInUp {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(0, 2%, 0);
+    transform: translate3d(0, 2%, 0);
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}
+@keyframes fadeInUp {
+  from {
+    opacity: 0;
+    -webkit-transform: translate3d(0, 2%, 0);
+    transform: translate3d(0, 2%, 0);
+  }
+  to {
+    opacity: 1;
+    -webkit-transform: translate3d(0, 0, 0);
+    transform: translate3d(0, 0, 0);
+  }
+}
+.fadeInUp {
+  -webkit-animation-name: fadeInUp;
+  animation-name: fadeInUp;
+}
